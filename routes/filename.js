@@ -7,7 +7,6 @@ const jwt = require('jsonwebtoken');
 // Import third partie library js
 const underscore = require('underscore');
 
-const config = require('../config/database');
 const fileName = require('../models/filename');
 
 const variables = require('../config/variables')

@@ -12,8 +12,6 @@ var async = require('async')
 // for Generating a token
 var crypto = require('crypto');
 
-
-const config = require('../config/database');
 var upload = require ('../config/multer');
 const nodeEmail = require('../utilities/nodemailer')
 
@@ -192,7 +190,7 @@ function userCheckPassowrd(res,err,isMatch,user){
   // if the password match
   if(isMatch){
     // construct the token- it has option
-    const token = jwt.sign(user,config.secret,{
+    const token = jwt.sign(user,'',{
       expiresIn:120000 // 20 minutes
     });
 

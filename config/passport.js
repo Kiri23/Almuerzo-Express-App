@@ -3,13 +3,12 @@ const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 
 const User = require('../models/user');
-const config = require('./database');
 
 module.exports = function(passport){
   let opts = {};
   // Token Send in Authentciation Header
   opts.jwtFromRequest = ExtractJwt.fromAuthHeader();
-  opts.secretOrKey = config.secret;
+  opts.secretOrKey = '1234';
 
   passport.use(new JwtStrategy(opts,(jwt_payload,done) => {
     console.log(jwt_payload);

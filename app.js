@@ -25,7 +25,7 @@ modules.Grid.mongo = modules.mongoose.mongo;
     // Connect to Mongodb Database 
     // To start the mongodb Server go to /usr/local/bin and run ./mongo - that will start the server and you can use 'mongod'
     // Cant fix deprecation because required to change the logic of the mongoose connection
-    var promise = modules.mongoose.connect(variables.config.database, {
+    var promise = modules.mongoose.connect(process.env.database_url, {
       useMongoClient: true,
       /* other options */
     });

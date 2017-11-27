@@ -1,6 +1,5 @@
 const multer  = require('multer');
 const mongoose = require('mongoose');
-const config = require('./database');
 const Grid = require('gridfs-stream');
 Grid.mongo = mongoose.mongo;
 var gfs;
@@ -10,7 +9,7 @@ const GridFsStorage = require('multer-gridfs-storage');
 
 /** Setting up storage using multer-gridfs-storage */
 var storage = GridFsStorage({
-    url: config.database,
+    url: process.env.database_url,
     gfs : gfs,
     filename: function (req, file, cb) {
       var options = { year: 'numeric', month: 'long', day: 'numeric',

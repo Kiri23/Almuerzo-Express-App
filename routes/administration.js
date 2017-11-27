@@ -5,7 +5,6 @@ const router = express.Router();
 const passport = require('passport');
 const jwt = require('jsonwebtoken');
 
-const config = require('../config/database');
 var upload = require ('../config/multer');
 
 const Administration = require('../models/administrator');
@@ -54,7 +53,7 @@ router.post('/authenticate', (req, res,next) => {
       // if the password match
       if(isMatch){
         // construct the token- it has option
-        const token = jwt.sign(Administrator,config.secret,{
+        const token = jwt.sign(Administrator,'',{
           expiresIn:120000 // 20 minutes
         });
         // Send the reponse in Json Format
