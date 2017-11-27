@@ -9,7 +9,7 @@ const GridFsStorage = require('multer-gridfs-storage');
 
 /** Setting up storage using multer-gridfs-storage */
 var storage = GridFsStorage({
-    url: process.env.database_url,
+    url: process.env.database_url || 'mongodb://kiri:1234@ds121896.mlab.com:21896/almuerzo-express-app',
     gfs : gfs,
     filename: function (req, file, cb) {
       var options = { year: 'numeric', month: 'long', day: 'numeric',
