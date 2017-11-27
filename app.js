@@ -20,7 +20,7 @@ const paypal = require('./routes/paypal');
 
 modules.Grid.mongo = modules.mongoose.mongo;
 // modules.LogRocket.init('rtbfoe/opas-web-app');
-console.log(process.env.database_url)
+
 // ********************** MONGO Database *************** // 
     // Connect to Mongodb Database 
     // To start the mongodb Server go to /usr/local/bin and run ./mongo - that will start the server and you can use 'mongod'
