@@ -3901,7 +3901,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".btn-info{\n    background-color: grey;\n}", ""]);
 
 // exports
 
@@ -4147,7 +4147,7 @@ module.exports = "<nav class=\"navbar navbar-default\">\n  <div class=\"containe
 /* 332 */
 /***/ (function(module, exports) {
 
-module.exports = "<p class=\"lead\"> Total son 5 dolares</p>\n\n<form name=\"registerForm\" (submit)=\"onPaySubmit()\">\n  <input class=\"btn btn-primary\" type=\"submit\" value=\"Pagar\">\n</form>"
+module.exports = "<p class=\"lead\"> Total son 5<span>&#36;</span>\n  dolares</p>\n\n<form name=\"registerForm\" (submit)=\"onPaySubmit()\">\n  <h3 style=\"display: inline-block;\">Pagar con &nbsp;&nbsp; </h3>\n  <input type=\"image\" src=\"https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png\" alt=\"PayPal\" class=\"btn btn-info\"  value=\"Pagar con paypal\">\n</form>"
 
 /***/ }),
 /* 333 */
@@ -4347,7 +4347,7 @@ module.exports = module.exports.toString();
 /* 386 */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Hacer esto un componente pq lo voy a usar en menu tambien  -->\n<div class=\"card py-1\" style=\"max-width: 30rem;\">\n    <img class=\"card-img-top img-fluid\" src=\"../../assets/lunch.jpeg\" alt=\"Card image cap\">\n    <div class=\"card-body\">\n      <h4 class=\"card-header\">Sandwiches </h4>\n      <p class=\"card-text\">\n        En este menu podras ver los diferentes tipos de sandwiches que hacemos\n      </p>\n      <a [routerLink] = \"['/pay']\" class=\"btn btn-primary\"> Ordenar</a>\n    </div>\n  </div>\n  "
+module.exports = "<!-- Hacer esto un componente pq lo voy a usar en menu tambien  -->\n<div class=\"card py-1\" style=\"max-width: 30rem;\">\n    <img class=\"card-img-top img-fluid\" src=\"../../assets/lunch.jpeg\" alt=\"Card image cap\">\n    <div class=\"card-body\">\n      <h4 class=\"card-header\">Sandwiches </h4>\n      <p class=\"card-text\">\n        En este menu podras ver los diferentes tipos de sandwiches que hacemos\n      </p>\n      <a [routerLink] = \"['/pay']\" class=\"btn btn-primary\"> Ordenar (pagar) </a>\n    </div>\n  </div>\n  "
 
 /***/ })
 ],[377]);
