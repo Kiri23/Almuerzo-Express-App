@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* Disable an Archor tag to be clicked and just behave like a text  */
+.disableClick{
+    pointer-events: none;
+}
+
 /* Override Boostrap Default Color  */
 .navbar-default .navbar-nav>li>a {
     color: #363636;
@@ -44,6 +49,20 @@
 /* Estas clases son sacadas de bostrap. Son clases de boostrap. Por eso en los 
    medias hay clase que no estan en este css.
 */
+.d-flex {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .flex-row {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: row !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -96,7 +115,7 @@ html {
 
   .card-text{
       font-size: 1.5rem;
-      padding-left: 0.75rem;
+      padding: 0 0.85rem;
   }
 
   .card-text:last-child {

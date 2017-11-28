@@ -53,6 +53,7 @@ import {UtilitiesService} from './services/utilities.service';
 import {AdministratorsService} from './services/administration/administrator.service';
 import {OrganizationsService} from './services/organization/organization.service';
 import {PaypalService} from './services/paypal.service';
+import { SubmenusComponent } from './components/menu/submenus/submenus.component';
 
 
 
@@ -133,7 +134,8 @@ const appRoutes: Routes = [
     DownloadProfessorFilesComponent,
     PayComponent,
     TiendasComponent,
-    MenuComponent
+    MenuComponent,
+    SubmenusComponent
   ],
   imports: [
     BrowserModule,

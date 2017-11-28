@@ -1,12 +1,43 @@
-<!-- Hacer esto un componente pq lo voy a usar en menu tambien  -->
-<div class="card py-1" style="max-width: 30rem;">
-    <img class="card-img-top img-fluid" src="../../assets/lunch.jpeg" alt="Card image cap">
-    <div class="card-body">
-      <h4 class="card-header">Sandwiches </h4>
-      <p class="card-text">
-        En este menu podras ver los diferentes tipos de sandwiches que hacemos
-      </p>
-      <a [routerLink] = "['/pay']" class="btn btn-primary"> Ordenar (pagar) </a>
+<!-- Flexbox -->
+<div class="d-flex flex-row">
+  <!-- Hacer esto un componente pq lo voy a usar en menu tambien  -->
+  <div class="card py-1 marginCard" style="max-width: 30rem;">
+      <img class="card-img-top img-fluid" src="../../assets/lunch.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-header">Sandwiches </h4>
+        <p class="card-text">
+          En este menu podras ver los diferentes tipos de sandwiches que hacemos
+          <app-submenus></app-submenus>
+        </p>
+        <a [routerLink] = "['/pay']" class="btn btn-primary marginPay text-center"> Ordenar (pagar) </a>
+      </div>
     </div>
-  </div>
-  
+    
+    <!-- CREAR COMPONENTE!! -->
+
+    <!-- Hacer esto un componente pq lo voy a usar en menu tambien  -->
+  <div class="card py-1 marginCard" style="max-width: 30rem;">
+      <img class="card-img-top img-fluid" src="../../assets/comidaCriolla.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-header">Comida Criolla </h4>
+        <p class="card-text">
+          En este menu podras ver los diferentes tipos de sandwiches que hacemos
+          <app-submenus></app-submenus>
+        </p>
+        <a [routerLink] = "['/pay']" class="btn btn-primary marginPay"> Ordenar (pagar) </a>
+      </div>
+    </div>
+    
+    <!-- Hacer esto un componente pq lo voy a usar en menu tambien  -->
+  <div class="card py-1 marginCard" style="max-width: 30rem;">
+      <img class="card-img-top img-fluid" src="../../assets/pasta.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-header">Pastas </h4>
+        <p class="card-text">
+          En este menu podras ver los diferentes tipos de sandwiches que hacemos
+          <app-submenus></app-submenus>
+        </p>
+        <a [routerLink] = "['/pay']" class="btn btn-primary marginPay"> Ordenar (pagar) </a>        
+      </div>
+    </div>
+</div>

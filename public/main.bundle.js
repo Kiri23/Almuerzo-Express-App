@@ -1074,6 +1074,7 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__services_administration_administrator_service__ = __webpack_require__(142);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__services_organization_organization_service__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__services_paypal_service__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_menu_submenus_submenus_component__ = __webpack_require__(387);
 /* unused harmony export RavenErrorHandler */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1124,6 +1125,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 //Services
+
 
 
 
@@ -1211,7 +1213,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_33__components_download_professor_files_download_professor_files_component__["a" /* DownloadProfessorFilesComponent */],
             __WEBPACK_IMPORTED_MODULE_34__components_pay_pay_component__["a" /* PayComponent */],
             __WEBPACK_IMPORTED_MODULE_35__components_tiendas_tiendas_component__["a" /* TiendasComponent */],
-            __WEBPACK_IMPORTED_MODULE_36__components_menu_menu_component__["a" /* MenuComponent */]
+            __WEBPACK_IMPORTED_MODULE_36__components_menu_menu_component__["a" /* MenuComponent */],
+            __WEBPACK_IMPORTED_MODULE_46__components_menu_submenus_submenus_component__["a" /* SubmenusComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -4335,7 +4338,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".marginCard{\n    margin:0px 10px;\n}\n\n.marginPay{\n    margin: 0px 30px;\n}", ""]);
 
 // exports
 
@@ -4347,7 +4350,65 @@ module.exports = module.exports.toString();
 /* 386 */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Hacer esto un componente pq lo voy a usar en menu tambien  -->\n<div class=\"card py-1\" style=\"max-width: 30rem;\">\n    <img class=\"card-img-top img-fluid\" src=\"../../assets/lunch.jpeg\" alt=\"Card image cap\">\n    <div class=\"card-body\">\n      <h4 class=\"card-header\">Sandwiches </h4>\n      <p class=\"card-text\">\n        En este menu podras ver los diferentes tipos de sandwiches que hacemos\n      </p>\n      <a [routerLink] = \"['/pay']\" class=\"btn btn-primary\"> Ordenar (pagar) </a>\n    </div>\n  </div>\n  "
+module.exports = "<!-- Flexbox -->\n<div class=\"d-flex flex-row\">\n  <!-- Hacer esto un componente pq lo voy a usar en menu tambien  -->\n  <div class=\"card py-1 marginCard\" style=\"max-width: 30rem;\">\n      <img class=\"card-img-top img-fluid\" src=\"../../assets/lunch.jpeg\" alt=\"Card image cap\">\n      <div class=\"card-body\">\n        <h4 class=\"card-header\">Sandwiches </h4>\n        <p class=\"card-text\">\n          En este menu podras ver los diferentes tipos de sandwiches que hacemos\n          <app-submenus></app-submenus>\n        </p>\n        <a [routerLink] = \"['/pay']\" class=\"btn btn-primary marginPay text-center\"> Ordenar (pagar) </a>\n      </div>\n    </div>\n    \n    <!-- CREAR COMPONENTE!! -->\n\n    <!-- Hacer esto un componente pq lo voy a usar en menu tambien  -->\n  <div class=\"card py-1 marginCard\" style=\"max-width: 30rem;\">\n      <img class=\"card-img-top img-fluid\" src=\"../../assets/comidaCriolla.jpeg\" alt=\"Card image cap\">\n      <div class=\"card-body\">\n        <h4 class=\"card-header\">Comida Criolla </h4>\n        <p class=\"card-text\">\n          En este menu podras ver los diferentes tipos de sandwiches que hacemos\n          <app-submenus></app-submenus>\n        </p>\n        <a [routerLink] = \"['/pay']\" class=\"btn btn-primary marginPay\"> Ordenar (pagar) </a>\n      </div>\n    </div>\n    \n    <!-- Hacer esto un componente pq lo voy a usar en menu tambien  -->\n  <div class=\"card py-1 marginCard\" style=\"max-width: 30rem;\">\n      <img class=\"card-img-top img-fluid\" src=\"../../assets/pasta.jpeg\" alt=\"Card image cap\">\n      <div class=\"card-body\">\n        <h4 class=\"card-header\">Pastas </h4>\n        <p class=\"card-text\">\n          En este menu podras ver los diferentes tipos de sandwiches que hacemos\n          <app-submenus></app-submenus>\n        </p>\n        <a [routerLink] = \"['/pay']\" class=\"btn btn-primary marginPay\"> Ordenar (pagar) </a>        \n      </div>\n    </div>\n</div>"
+
+/***/ }),
+/* 387 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SubmenusComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SubmenusComponent = (function () {
+    function SubmenusComponent() {
+    }
+    SubmenusComponent.prototype.ngOnInit = function () {
+    };
+    return SubmenusComponent;
+}());
+SubmenusComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-submenus',
+        template: __webpack_require__(389),
+        styles: [__webpack_require__(388)]
+    }),
+    __metadata("design:paramtypes", [])
+], SubmenusComponent);
+
+//# sourceMappingURL=submenus.component.js.map
+
+/***/ }),
+/* 388 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+/* 389 */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Hacer esto un solo componente -->\n<div id=\"accordion\" role=\"tablist\">\n    <div class=\"card\">\n      <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n        <h5 class=\"mb-0\">\n          <!-- <div class=\"form-check\">\n              <label class=\"form-check-label\">\n                <input class=\"form-check-input\" type=\"checkbox\" value=\"\">\n                <a class = \"disableClick\"> Sandwich de Jamon y queso </a>\n              </label>\n          </div>               -->\n          <a data-toggle=\"collapse\" href=\"#collapseOne\" aria-expanded=\"false\" aria-controls=\"collapseOne\" class=\"collapsed\">\n            Sandwich Jamon y queso\n          </a>\n        </h5>\n      </div>\n      <!-- class = \"show\" -->\n      <div id=\"collapseOne\" class=\"collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\">\n        <div class=\"card-body\">\n          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.\n        </div>\n      </div>\n    </div>\n    \n    <!-- Hasta aqui llegaria el componente -->\n    <div class=\"card\">\n      <div class=\"card-header\" role=\"tab\" id=\"headingTwo\">\n        <h5 class=\"mb-0\">\n          <!-- <div class=\"form-check\">\n              <label class=\"form-check-label\">\n                <input class=\"form-check-input\" type=\"checkbox\" value=\"\">\n                <a class = \"disableClick\"> Sandwich de Mortadella </a>\n              </label>\n          </div> -->\n          <a class=\"\" data-toggle=\"collapse\" href=\"#collapseTwo\" aria-expanded=\"true\" aria-controls=\"collapseTwo\">\n            Sandwich de Mortadella\n          </a>\n        </h5>\n      </div>\n      <div id=\"collapseTwo\" class=\"collapse\" role=\"tabpanel\" aria-labelledby=\"headingTwo\">\n        <div class=\"card-body\">\n          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.\n        </div>\n      </div>\n    </div>\n  </div>\n  "
 
 /***/ })
 ],[377]);
