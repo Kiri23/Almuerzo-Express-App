@@ -30,7 +30,7 @@
     <!--click event  -->
     <li *ngIf="authService.checkLoggedIn()" > <a href="#" (click)="onLogoutClick()">Salir</a></li>
 
-    <li *ngIf="!authService.checkLoggedIn()" [routerLinkActive]= "['active']" [routerLinkActiveOptions]= "{exact:true}"><a [routerLink]="['/login']">Conéctate</a></li>
+    <li *ngIf="!authService.checkLoggedIn()" [routerLinkActive]= "['active']" [routerLinkActiveOptions]= "{exact:true}"><a [routerLink]="['/tiendas']">Tiendas</a></li>
 
     <li *ngIf="!authService.checkLoggedIn()" [routerLinkActive]= "['active']" [routerLinkActiveOptions]= "{exact:true}"><a [routerLink]= "['/register']">Regístrate</a></li>
  </ul>

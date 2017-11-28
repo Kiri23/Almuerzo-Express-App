@@ -1063,15 +1063,17 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_reset_password_reset_password_component__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_download_professor_files_download_professor_files_component__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_pay_pay_component__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__services_validate_service__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__services_auth_service__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__guards_auth_guard__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__guards_administrtor_guard__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__services_users_service__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__services_utilities_service__ = __webpack_require__(216);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__services_administration_administrator_service__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__services_organization_organization_service__ = __webpack_require__(143);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__services_paypal_service__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_tiendas_tiendas_component__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_menu_menu_component__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__services_validate_service__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__services_auth_service__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__guards_auth_guard__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__guards_administrtor_guard__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__services_users_service__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__services_utilities_service__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__services_administration_administrator_service__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__services_organization_organization_service__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__services_paypal_service__ = __webpack_require__(144);
 /* unused harmony export RavenErrorHandler */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1093,6 +1095,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 // external js files 
 
 // Components
+
+
 
 
 
@@ -1152,8 +1156,8 @@ var appRoutes = [
     // protect route
     { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_14__components_dashboard_dashboard_component__["a" /* DashboardComponent */] },
     // protect route
-    { path: 'adminDashboard', component: __WEBPACK_IMPORTED_MODULE_16__components_admin_dashboard_admin_dashboard_component__["a" /* AdminDashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_38__guards_administrtor_guard__["a" /* AdministratorGuard */]] },
-    { path: 'adminUsers', component: __WEBPACK_IMPORTED_MODULE_25__components_admin_users_admin_users_component__["a" /* AdminUsersComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_38__guards_administrtor_guard__["a" /* AdministratorGuard */]] },
+    { path: 'adminDashboard', component: __WEBPACK_IMPORTED_MODULE_16__components_admin_dashboard_admin_dashboard_component__["a" /* AdminDashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_40__guards_administrtor_guard__["a" /* AdministratorGuard */]] },
+    { path: 'adminUsers', component: __WEBPACK_IMPORTED_MODULE_25__components_admin_users_admin_users_component__["a" /* AdminUsersComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_40__guards_administrtor_guard__["a" /* AdministratorGuard */]] },
     // I will want this route to be protected only another administrator can create other
     // administrator
     { path: 'register/admin', component: __WEBPACK_IMPORTED_MODULE_26__components_admin_register_admin_register_component__["a" /* AdminRegisterComponent */] },
@@ -1166,7 +1170,9 @@ var appRoutes = [
     { path: 'timeline', component: __WEBPACK_IMPORTED_MODULE_30__components_user_timeline_user_timeline_component__["a" /* UserTimelineComponent */] },
     { path: 'forgot', component: __WEBPACK_IMPORTED_MODULE_31__components_forgot_password_forgot_password_component__["a" /* ForgotPasswordComponent */] },
     { path: 'reset', component: __WEBPACK_IMPORTED_MODULE_32__components_reset_password_reset_password_component__["a" /* ResetPasswordComponent */] },
-    { path: 'pay', component: __WEBPACK_IMPORTED_MODULE_34__components_pay_pay_component__["a" /* PayComponent */] }
+    { path: 'pay', component: __WEBPACK_IMPORTED_MODULE_34__components_pay_pay_component__["a" /* PayComponent */] },
+    { path: 'tiendas', component: __WEBPACK_IMPORTED_MODULE_35__components_tiendas_tiendas_component__["a" /* TiendasComponent */] },
+    { path: 'menu/:tienda', component: __WEBPACK_IMPORTED_MODULE_36__components_menu_menu_component__["a" /* MenuComponent */] }
     // {path:'succes',component:PayComponent}
 ];
 var AppModule = (function () {
@@ -1203,7 +1209,9 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_31__components_forgot_password_forgot_password_component__["a" /* ForgotPasswordComponent */],
             __WEBPACK_IMPORTED_MODULE_32__components_reset_password_reset_password_component__["a" /* ResetPasswordComponent */],
             __WEBPACK_IMPORTED_MODULE_33__components_download_professor_files_download_professor_files_component__["a" /* DownloadProfessorFilesComponent */],
-            __WEBPACK_IMPORTED_MODULE_34__components_pay_pay_component__["a" /* PayComponent */]
+            __WEBPACK_IMPORTED_MODULE_34__components_pay_pay_component__["a" /* PayComponent */],
+            __WEBPACK_IMPORTED_MODULE_35__components_tiendas_tiendas_component__["a" /* TiendasComponent */],
+            __WEBPACK_IMPORTED_MODULE_36__components_menu_menu_component__["a" /* MenuComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -1213,8 +1221,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5_angular2_flash_messages__["FlashMessagesModule"],
             __WEBPACK_IMPORTED_MODULE_6__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot()
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_35__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_36__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_37__guards_auth_guard__["a" /* AuthGuard */], __WEBPACK_IMPORTED_MODULE_38__guards_administrtor_guard__["a" /* AdministratorGuard */],
-            __WEBPACK_IMPORTED_MODULE_39__services_users_service__["a" /* UsersService */], __WEBPACK_IMPORTED_MODULE_40__services_utilities_service__["a" /* UtilitiesService */], __WEBPACK_IMPORTED_MODULE_41__services_administration_administrator_service__["a" /* AdministratorsService */], __WEBPACK_IMPORTED_MODULE_42__services_organization_organization_service__["a" /* OrganizationsService */], __WEBPACK_IMPORTED_MODULE_43__services_paypal_service__["a" /* PaypalService */], { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["ErrorHandler"], useClass: RavenErrorHandler }
+        providers: [__WEBPACK_IMPORTED_MODULE_37__services_validate_service__["a" /* ValidateService */], __WEBPACK_IMPORTED_MODULE_38__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_39__guards_auth_guard__["a" /* AuthGuard */], __WEBPACK_IMPORTED_MODULE_40__guards_administrtor_guard__["a" /* AdministratorGuard */],
+            __WEBPACK_IMPORTED_MODULE_41__services_users_service__["a" /* UsersService */], __WEBPACK_IMPORTED_MODULE_42__services_utilities_service__["a" /* UtilitiesService */], __WEBPACK_IMPORTED_MODULE_43__services_administration_administrator_service__["a" /* AdministratorsService */], __WEBPACK_IMPORTED_MODULE_44__services_organization_organization_service__["a" /* OrganizationsService */], __WEBPACK_IMPORTED_MODULE_45__services_paypal_service__["a" /* PaypalService */], { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["ErrorHandler"], useClass: RavenErrorHandler }
         ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* AppComponent */]]
     })
@@ -4115,7 +4123,7 @@ module.exports = "<h2 class=\"page-header\">Recupera tu Contraseña</h2>\n<h4> &
 /* 328 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron text-center\">\n    <h1> Carpeta Electrónica para Eco Escuelas </h1>\n    <p class=\"lead\">Bienvenido a tu carpeta electrónica</p>\n  <div>\n    <a [routerLink] = \"['/register']\" class=\"btn btn-primary\">Regístrate</a>\n    <a [routerLink] = \"['/login']\" class=\"btn btn-default\">Conéctate</a>\n  </div>\n  <br>\n  <p  class=\"lead\">Paga la membresia de Opas</p>\n  <button [routerLink]=\"['/pay']\" class=\"btn btn-primary\">Paga aqui</button>\n\n</div>\n\n\n<!-- <div class=\"row\">\n  <div class=\"col-md-4 col-sm-4 col-sm\">\n    <h3>Express Backend</h3>\n    <p>A rock solid Node.js/Express server using mongoose to organize models and query </p>\n  </div>\n  <div class=\"col-md-4 col-sm-4 col-sm\">\n    <h3>Angular-CLI</h3>\n    <p>Angular-cli to generate components,services and more. Local dev server and easy</p>\n  </div>\n  <div class=\"col-md-4 col-sm-4 col-sm\">\n    <h3>JWT Tokens</h3>\n    <p>Full feautured authentication using JSON web tokens. Login and store user data</p>\n  </div>\n</div> -->\n"
+module.exports = "<div class=\"jumbotron text-center\">\n    <h1> Almuerzo Express </h1>\n    <p class=\"lead\">Ordena tu comida en linea, sin hacer filas</p>\n  <div>\n    <a [routerLink] = \"['/tiendas']\" class=\"btn btn-primary text-xl-center\"> <h5 style=\"font-size: 17px\"> Ver tiendas</h5> </a>\n    <!-- <a [routerLink] = \"['/login']\" class=\"btn btn-default\">Conéctate</a>\n  </div>\n  <br>\n  <p  class=\"lead\">Paga la membresia de Opas</p>\n  <button [routerLink]=\"['/pay']\" class=\"btn btn-primary\">Paga aqui</button> -->\n\n</div>\n"
 
 /***/ }),
 /* 329 */
@@ -4133,13 +4141,13 @@ module.exports = "<h2 class=\"page-header\">Conéctate</h2>\n<form (submit)=\"on
 /* 331 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">OPAS</a>\n    </div>\n  <div id=\"navbar\" class=\"collapse navbar-collapse\">\n  <ul class=\"nav navbar-nav navbar-left\">  -->\n    <!--RouterLinkActive es para darle active a las clas cuando se de click en el navbar\n        RouterLinkActiveOption = para que el tab correcto se marque active pq si no se marcan los dos nn -->\n        <li [routerLinkActive] = \"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"> <a [routerLink] = \"['/']\">Inicio</a> </li>\n   </ul>\n\n  <ul class=\"nav navbar-nav navbar-right\">\n    <li *ngIf=\"authService.checkLoggedIn()&& isAdminRole()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]=\"['/adminDashboard']\">Administrador</a></li>\n\n    <li *ngIf=\"authService.checkLoggedIn()&& isAdminRole()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]=\"['/admin/upload']\">Suba un modelo</a></li>\n\n    <li *ngIf=\"authService.checkLoggedIn()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\n\n    <li *ngIf=\"authService.checkLoggedIn()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]=\"['/profile']\">Perfil</a></li>\n\n    <li *ngIf=\"authService.checkLoggedIn() && !isAdminRole()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]=\"['/users/upload']\">Subir un archivo</a></li>\n\n    <!--click event  -->\n    <li *ngIf=\"authService.checkLoggedIn()\" > <a href=\"#\" (click)=\"onLogoutClick()\">Salir</a></li>\n\n    <li *ngIf=\"!authService.checkLoggedIn()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]=\"['/login']\">Conéctate</a></li>\n\n    <li *ngIf=\"!authService.checkLoggedIn()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]= \"['/register']\">Regístrate</a></li>\n </ul>\n\n</div>\n\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">OPAS</a>\n    </div>\n  <div id=\"navbar\" class=\"collapse navbar-collapse\">\n  <ul class=\"nav navbar-nav navbar-left\">  -->\n    <!--RouterLinkActive es para darle active a las clas cuando se de click en el navbar\n        RouterLinkActiveOption = para que el tab correcto se marque active pq si no se marcan los dos nn -->\n        <li [routerLinkActive] = \"['active']\" [routerLinkActiveOptions] = \"{exact:true}\"> <a [routerLink] = \"['/']\">Inicio</a> </li>\n   </ul>\n\n  <ul class=\"nav navbar-nav navbar-right\">\n    <li *ngIf=\"authService.checkLoggedIn()&& isAdminRole()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]=\"['/adminDashboard']\">Administrador</a></li>\n\n    <li *ngIf=\"authService.checkLoggedIn()&& isAdminRole()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]=\"['/admin/upload']\">Suba un modelo</a></li>\n\n    <li *ngIf=\"authService.checkLoggedIn()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]=\"['/dashboard']\">Dashboard</a></li>\n\n    <li *ngIf=\"authService.checkLoggedIn()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]=\"['/profile']\">Perfil</a></li>\n\n    <li *ngIf=\"authService.checkLoggedIn() && !isAdminRole()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]=\"['/users/upload']\">Subir un archivo</a></li>\n\n    <!--click event  -->\n    <li *ngIf=\"authService.checkLoggedIn()\" > <a href=\"#\" (click)=\"onLogoutClick()\">Salir</a></li>\n\n    <li *ngIf=\"!authService.checkLoggedIn()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]=\"['/tiendas']\">Tiendas</a></li>\n\n    <li *ngIf=\"!authService.checkLoggedIn()\" [routerLinkActive]= \"['active']\" [routerLinkActiveOptions]= \"{exact:true}\"><a [routerLink]= \"['/register']\">Regístrate</a></li>\n </ul>\n\n</div>\n\n  </div>\n</nav>\n"
 
 /***/ }),
 /* 332 */
 /***/ (function(module, exports) {
 
-module.exports = "<p class=\"lead\"> Paga aqui la membresia para ecoescuelas</p>\n\n<form name=\"registerForm\" (submit)=\"onPaySubmit()\">\n  <input class=\"btn btn-primary\" type=\"submit\" value=\"Pagar\">\n</form>"
+module.exports = "<p class=\"lead\"> Total son 5 dolares</p>\n\n<form name=\"registerForm\" (submit)=\"onPaySubmit()\">\n  <input class=\"btn btn-primary\" type=\"submit\" value=\"Pagar\">\n</form>"
 
 /***/ }),
 /* 333 */
@@ -4151,7 +4159,7 @@ module.exports = "<!--ngIf(ifStatement)- Make sure there's a user before showing
 /* 334 */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">{{text}}</h2>\n\n<form name=\"registerForm\" (submit)=\"onRegisterSubmit()\">\n\n  <div class=\"form-group\">\n    <label for=\"name\">Nombre</label>\n    <input type=\"text\" required [(ngModel)]=\"name\" name=\"name\" ng-model=\"name\"  required class=\"form-control\">\n    <!-- <h1>{{registerForm.name.$touched}}</h1> -->\n    <!--Error message -->\n    <!--Esto es cpmo hacer que muestre un mesnaje a base de true o false de un estado -->\n    <!-- <span ng-show=\"registerForm.name.$touched && registerForm.name.$invalid\">The name is required.</span> -->\n  </div>\n  <div class=\"form-group\">\n    <label for=\"schooName\">Nombre de escuela</label>\n    <input type=\"text\" required [(ngModel)]=\"escuela\" name=\"escuela\" required class=\"form-control\">\n  </div>\n\n  <div class=\"form-group\">\n    <label for=\"username\">Nombre de usuario</label>\n    <input type=\"text\" required [(ngModel)]=\"username\" name=\"username\" required class=\"form-control\">\n  </div>\n\n  <div class=\"form-group\">\n    <label for=\"name\">Contraseña</label>\n    <input type=\"password\" required [(ngModel)]=\"password\" name=\"password\"  required class=\"form-control\">\n  </div>\n\n  <div class=\"form-group\">\n    <label for=\"name\">Dirección de correo electrónico</label>\n    <input type=\"text\" required [(ngModel)]=\"email\" name=\"email\" required class=\"form-control\">\n  </div>\n\n  <input type=\"submit\" class=\"btn btn-primary\" name=\"\" value=\"submit\">\n\n</form>\n"
+module.exports = "<h2 class=\"page-header\">{{text}}</h2>\n\n<form name=\"registerForm\" (submit)=\"onRegisterSubmit()\">\n\n  <div class=\"form-group\">\n    <label for=\"name\">Nombre</label>\n    <input type=\"text\" required [(ngModel)]=\"name\" name=\"name\" ng-model=\"name\"  required class=\"form-control\">\n    <!-- <h1>{{registerForm.name.$touched}}</h1> -->\n    <!--Error message -->\n    <!--Esto es cpmo hacer que muestre un mesnaje a base de true o false de un estado -->\n    <!-- <span ng-show=\"registerForm.name.$touched && registerForm.name.$invalid\">The name is required.</span> -->\n  </div>\n  \n  <div class=\"form-group\">\n    <label for=\"username\">Nombre de usuario</label>\n    <input type=\"text\" required [(ngModel)]=\"username\" name=\"username\" required class=\"form-control\">\n  </div>\n\n  <div class=\"form-group\">\n    <label for=\"name\">Contraseña</label>\n    <input type=\"password\" required [(ngModel)]=\"password\" name=\"password\"  required class=\"form-control\">\n  </div>\n\n  <div class=\"form-group\">\n    <label for=\"name\">Dirección de correo electrónico</label>\n    <input type=\"text\" required [(ngModel)]=\"email\" name=\"email\" required class=\"form-control\">\n  </div>\n\n  <input type=\"submit\" class=\"btn btn-primary\" name=\"\" value=\"submit\">\n\n</form>\n"
 
 /***/ }),
 /* 335 */
@@ -4221,6 +4229,125 @@ module.exports = "\t<!-- \n\t<link rel=\"stylesheet\" href=\"css/reset.css\"> <!
 
 module.exports = __webpack_require__(174);
 
+
+/***/ }),
+/* 378 */,
+/* 379 */,
+/* 380 */,
+/* 381 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TiendasComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TiendasComponent = (function () {
+    function TiendasComponent() {
+    }
+    TiendasComponent.prototype.ngOnInit = function () {
+    };
+    return TiendasComponent;
+}());
+TiendasComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-tiendas',
+        template: __webpack_require__(383),
+        styles: [__webpack_require__(382)]
+    }),
+    __metadata("design:paramtypes", [])
+], TiendasComponent);
+
+//# sourceMappingURL=tiendas.component.js.map
+
+/***/ }),
+/* 382 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+/* 383 */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Hacer esto un componente pq lo voy a usar en menu tambien  -->\n<div class=\"card py-1\" style=\"max-width: 30rem;\">\n  <img class=\"card-img-top img-fluid\" src=\"../../assets/lunch.jpeg\" alt=\"Card image cap\">\n  <div class=\"card-body\">\n    <h4 class=\"card-header\">Casita cafeteria</h4>\n    <p class=\"card-text\">\n      La casita cafeteria ofrece comida criolla y desayunos para los estudiantes universitario. Esta ubicada en la universidad de Puerto Rico en Bayamon y esta abierta de lunes a viernes.\n    </p>\n    <a [routerLink] = \"['/menu/cafeteria']\" class=\"btn btn-primary\">Ver menu y ordenar </a>\n  </div>\n</div>\n"
+
+/***/ }),
+/* 384 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MenuComponent = (function () {
+    function MenuComponent() {
+    }
+    MenuComponent.prototype.ngOnInit = function () {
+    };
+    return MenuComponent;
+}());
+MenuComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-menu',
+        template: __webpack_require__(386),
+        styles: [__webpack_require__(385)]
+    }),
+    __metadata("design:paramtypes", [])
+], MenuComponent);
+
+//# sourceMappingURL=menu.component.js.map
+
+/***/ }),
+/* 385 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+/* 386 */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Hacer esto un componente pq lo voy a usar en menu tambien  -->\n<div class=\"card py-1\" style=\"max-width: 30rem;\">\n    <img class=\"card-img-top img-fluid\" src=\"../../assets/lunch.jpeg\" alt=\"Card image cap\">\n    <div class=\"card-body\">\n      <h4 class=\"card-header\">Sandwiches </h4>\n      <p class=\"card-text\">\n        En este menu podras ver los diferentes tipos de sandwiches que hacemos\n      </p>\n      <a [routerLink] = \"['/pay']\" class=\"btn btn-primary\"> Ordenar</a>\n    </div>\n  </div>\n  "
 
 /***/ })
 ],[377]);

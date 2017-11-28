@@ -38,6 +38,10 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { DownloadProfessorFilesComponent } from './components/download-professor-files/download-professor-files.component';
 import { PayComponent } from './components/pay/pay.component';
+import { TiendasComponent } from './components/tiendas/tiendas.component';
+import { MenuComponent } from './components/menu/menu.component';
+
+
 
 //Services
 import {ValidateService} from './services/validate.service';
@@ -89,7 +93,10 @@ const appRoutes: Routes = [
   {path:'timeline',component:UserTimelineComponent},
   {path:'forgot',component:ForgotPasswordComponent},
   {path:'reset',component:ResetPasswordComponent},
-  {path:'pay',component:PayComponent}
+  {path:'pay',component:PayComponent},
+  {path:'tiendas',component:TiendasComponent},
+  {path:'menu/:tienda',component:MenuComponent}
+
   // {path:'succes',component:PayComponent}
 
 
@@ -124,7 +131,9 @@ const appRoutes: Routes = [
     ForgotPasswordComponent,
     ResetPasswordComponent,
     DownloadProfessorFilesComponent,
-    PayComponent
+    PayComponent,
+    TiendasComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

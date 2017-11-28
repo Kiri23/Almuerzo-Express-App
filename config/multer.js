@@ -8,7 +8,6 @@ const GridFsStorage = require('multer-gridfs-storage');
 // set up storage for file using mongDb (Mongoose)
 
 /** Setting up storage using multer-gridfs-storage */
-console.log(process.env.database_url)
 var storage = GridFsStorage({
     url: process.env.database_url,
     gfs : gfs,
