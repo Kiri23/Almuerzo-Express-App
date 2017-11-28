@@ -4135,7 +4135,7 @@ module.exports = "<span class=\"glyphicon glyphicon-\" aria-hidden=\"true\"></sp
 /* 330 */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Conéctate</h2>\n<form (submit)=\"onLoginSubmit()\">\n  <div class=\"form-group\">\n    <label for=\"username\">Nombre de usuario</label>\n    <input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\" value=\"\">\n  </div>\n  <div class=\"form-group\">\n    <label for=\"username\">Contraseña</label>\n    <input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\"  value=\"\">\n  </div>\n  <div class=\"form-group\">\n    <a href=\"/forgot\" class=\"\" style=\"float: left;\" > Olvidaste tu Contraseña?</a>\n    <a href=\"/register\" class=\"\" style=\"float: left;\" > Crear Cuenta</a>\n    <br>\n  </div>\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"Conectar\">\n</form>\n"
+module.exports = "<h2 class=\"page-header\">Conéctate</h2>\n<form (submit)=\"onLoginSubmit()\">\n  <div class=\"form-group\">\n    <label for=\"username\">Nombre de usuario</label>\n    <input type=\"text\" [(ngModel)]=\"username\" name=\"username\" class=\"form-control\" value=\"\">\n  </div>\n  <div class=\"form-group\">\n    <label for=\"username\">Contraseña</label>\n    <input type=\"password\" [(ngModel)]=\"password\" name=\"password\" class=\"form-control\"  value=\"\">\n  </div>\n  <div class=\"form-group\">\n    <a href=\"/forgot\" class=\"\" style=\"float: left;\" > Olvidaste tu Contraseña?</a>\n    <a href=\"/register\" class=\"\" style=\"float: left;\" > No tienes una cuenta?</a>\n    <br>\n  </div>\n  <input type=\"submit\" class=\"btn btn-primary\" value=\"Conectar\">\n</form>\n"
 
 /***/ }),
 /* 331 */
